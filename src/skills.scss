@@ -1,0 +1,129 @@
+.skills {
+  display: flex;
+  padding: 5rem 1rem;
+  background-color: rgb(233, 233, 233);
+  &__picture {
+    flex: 0 0 50%;
+    img {
+      height: 50rem;
+      width: 100%;
+    }
+    // background-image: url(../assests/skills-pic.png);
+    // background-size: cover;
+    // background-position: top;
+  }
+  &__content {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 3rem;
+
+    &__title {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 4rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
+      color: #444358;
+      text-align: left;
+    }
+    .p {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      color: rgba(0, 0, 0, 0.719);
+      font-weight: bold;
+      font-family: "Quicksand", sans-serif;
+      margin-bottom: 10rem;
+    }
+  }
+}
+.skills__description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  &__row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  &__item {
+    flex: 0 0 50%;
+    display: flex;
+    &:not(:last-child) {
+      padding-right: 0.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 2rem;
+  }
+  &__icon {
+    display: inline;
+    font-size: 3rem;
+    margin-right: 1.4rem;
+  }
+}
+@media screen and(max-width:880px) {
+  .skills__description {
+    p {
+      font-size: 1.9rem;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.719);
+      font-weight: bold;
+      font-family: "Quicksand", sans-serif;
+      margin-bottom: 2rem;
+      margin-right: 1rem;
+    }
+  }
+}
+@media screen and(max-width:800px) {
+  .skills__description {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    &__row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+    &__item {
+      flex: 0 0 100%;
+      display: flex;
+      padding: 0;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.9rem;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.719);
+      font-weight: bold;
+      font-family: "Quicksand", sans-serif;
+      margin-bottom: 2rem;
+    }
+    &__icon {
+      display: inline;
+      font-size: 3rem;
+      margin-right: 1.4rem;
+    }
+  }
+  .skills__picture {
+    display: none;
+  }
+  .skills__content {
+    flex: 0 0 100%;
+  }
+}

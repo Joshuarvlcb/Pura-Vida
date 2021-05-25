@@ -1,0 +1,220 @@
+.header__logo {
+  background-color: #7f7afc;
+  padding: 2.6rem;
+  align-self: stretch;
+  height: 150%;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 0.6rem;
+  }
+  &__name {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  font-size: 1.4rem;
+  color: white;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: white;
+}
+//nav
+.nav {
+  margin-left: auto;
+  align-self: stretch;
+  display: flex;
+  margin-right: 9rem;
+  height: 100%;
+  &__link:visited,
+  &__link:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 0px;
+    cursor: pointer;
+    color: #46454c;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    list-style: none;
+    cursor: pointer;
+  }
+  &__item:hover {
+    background-color: #f6f6f6;
+  }
+}
+//header__number
+.header__number {
+  padding: 0 3rem;
+  background-color: #7f7afc;
+  height: 100%;
+  display: flex;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+
+  justify-content: center;
+  align-items: center;
+}
+.fa-bars {
+  color: #fff;
+}
+.nav {
+  margin-left: auto;
+  align-self: stretch;
+  display: flex;
+  margin-right: 9rem;
+  height: 100%;
+  &__link:visited,
+  &__link:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    line-height: 0px;
+    cursor: pointer;
+    color: #46454c;
+    font-family: "Nunito", sans-serif;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    list-style: none;
+    cursor: pointer;
+  }
+  &__item:hover {
+    background-color: #f6f6f6;
+  }
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .NavbarItems {
+    position: relative;
+  }
+  .header__logo {
+    font-size: 1.2rem;
+  }
+  .header__number {
+    display: none;
+  }
+  .none {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.3s linear;
+    &__link:visited,
+    &__link:link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 0px;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+      display: table;
+      font-family: "Quicksand", sans-serif;
+      color: #fdfdfd;
+    }
+    &__link:hover {
+      color: lightpink;
+      transform: scale(1.2);
+      transition: all 0.2s linear;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__item:hover {
+      background-color: transparent;
+    }
+  }
+  .nav-active {
+    background: #444358;
+    left: 0;
+    opacity: 1;
+    top: 1rem;
+    transition: all 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .nav-links {
+    text-align: center;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-item:hover {
+    border: none;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1111;
+    font-size: 3rem;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+}

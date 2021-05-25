@@ -1,0 +1,136 @@
+.testimonial {
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.603)), to(rgba(0, 0, 0, 0.719))), url(https://images.pexels.com/photos/1917849/pexels-photo-1917849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.603), rgba(0, 0, 0, 0.719)), url(https://images.pexels.com/photos/1917849/pexels-photo-1917849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonial-con {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30rem;
+  padding: 3rem;
+  margin-left: 13rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0.2rem 2rem 3rem rgba(0, 0, 0, 0.363);
+          box-shadow: 0.2rem 2rem 3rem rgba(0, 0, 0, 0.363);
+}
+
+.testimonial-con__line {
+  height: 3px;
+  background-color: #6c67cc;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.testimonial-con__review-line {
+  display: inline-block;
+  width: 1.5rem;
+  height: 3px;
+  margin-right: 0.5rem;
+  background-color: #6c67cc;
+}
+
+.testimonial-con__para {
+  color: #3b3b3bbd;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  font-family: "Quicksand", sans-serif;
+}
+
+.testimonial-con__reviewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.712);
+}
+
+.testimonial-con::before {
+  content: "\201C";
+  font-size: 10rem;
+  position: absolute;
+  top: -2.4rem;
+  left: 1rem;
+  color: #cf94ff;
+}
+
+.toggle--testimonial {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 2rem;
+  top: 40%;
+}
+
+.toggle--testimonial .toggle__item--testimonial {
+  margin-top: 10px;
+  width: 0.4rem;
+  height: 2.4rem;
+}
+
+@media screen and (max-width: 700px) {
+  .testimonial {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .testimonial-con {
+    margin: 0;
+  }
+  .toggle--testimonial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw !important;
+    padding: 0 10rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: 7%;
+    left: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .toggle--testimonial .toggle__item--testimonial {
+    width: 2.4rem;
+    height: 0.3rem;
+    background-color: #8585ff;
+  }
+}
+/*# sourceMappingURL=testimonial.min.css.map */

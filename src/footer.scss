@@ -1,0 +1,123 @@
+.footer {
+  background-color: #444358;
+  hr {
+    border-color: rgb(153, 153, 153);
+  }
+}
+.footer__main {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+//footer
+.footer__heading {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  h3 {
+    font-size: 2.2rem;
+    font-family: "Nunito", sans-serif;
+
+    color: #ffffff;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7f7afc;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+
+    // font-family: "Quicksand", sans-serif;
+  }
+  &__icon {
+    margin-left: 1rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: #7f7afc;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #444358;
+  }
+}
+.footer__main-content {
+  & {
+    h1 {
+      text-transform: capitalize;
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      font-family: "Nunito", sans-serif;
+    }
+  }
+  &__item {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: lightgray;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+  }
+  .P {
+    color: lightgreen;
+    display: inline;
+  }
+  .E {
+    color: lightgreen;
+    display: inline;
+  }
+}
+.footer__end {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 5rem;
+  align-items: center;
+  color: lightgrey;
+  font-size: 1.1rem;
+  font-family: "Quicksand", sans-serif;
+
+  &__copy {
+  }
+  &__up {
+    height: 3rem;
+    width: 3rem;
+    background-color: rgba(255, 182, 193, 0.87);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.4rem;
+    cursor: pointer;
+    color: #444358;
+  }
+}
+@media screen and(max-width:500px) {
+  .footer__heading {
+    flex-direction: column;
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .footer__end {
+    padding: 2.5rem 0;
+    justify-content: center;
+    &__up {
+      display: none;
+    }
+  }
+  .footer__main {
+    flex-direction: column;
+    align-items: center;
+    .footer__main-content {
+      margin-bottom: 0.67rem;
+      text-align: center;
+    }
+  }
+}

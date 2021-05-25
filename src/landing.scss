@@ -1,0 +1,141 @@
+.welcome {
+  display: flex;
+  background-color: rgb(116, 116, 116);
+}
+.intro {
+  flex: 0 0 40%;
+  background-color: #444358;
+  display: flex;
+  padding: 15rem 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  padding-left: 4rem;
+  position: relative;
+  &__text {
+    font-size: 3.8rem;
+    padding-right: 2rem;
+    margin-bottom: 3rem;
+    font-family: "Nunito", sans-serif;
+  }
+  &__video {
+    width: 13rem;
+    height: 4rem;
+    display: flex;
+    color: #000;
+  }
+  &__video__text {
+    flex: 0 0 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    font-size: 1rem;
+    color: #46454c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+  }
+  &__video__icon-con {
+    flex: 0 0 30%;
+    background-color: #7f7bfa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.2rem;
+    color: white;
+  }
+  &__video__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: white;
+  }
+
+  &__picture {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+  }
+  .toggle--welcome {
+    position: absolute;
+    bottom: 3rem;
+  }
+  .toggle--active {
+    background-color: #ff877f;
+  }
+}
+
+.picture-con {
+  flex: 0 0 60%;
+  background-color: honeydew;
+  color: white;
+  position: relative;
+  &__picture {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  }
+  &__quote {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #7f7bfa;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 3px;
+  }
+}
+.toggle {
+  display: flex;
+
+  & > * {
+    display: block;
+    margin-right: 1rem;
+    width: 2.4rem;
+    cursor: pointer;
+    height: 0.4rem;
+    background-color: #656479;
+  }
+}
+@media screen and(max-width:700px) {
+  .intro {
+    flex: 0 0 100%;
+    background-color: #444358;
+    display: flex;
+    padding: 15rem 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-left: 4rem;
+    position: relative;
+    &__text {
+      width: 100%;
+      text-align: center;
+      padding-right: 0rem;
+    }
+  }
+  .picture-con {
+    display: none;
+  }
+  .toggle--welcome {
+    position: absolute;
+    bottom: 3rem;
+    left: 6rem;
+  }
+}
