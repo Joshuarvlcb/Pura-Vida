@@ -1,63 +1,37 @@
 .welcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #747474;
 }
 
 .intro {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+  flex: 0 0 40%;
   background-color: #444358;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 15rem 3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   color: white;
   padding-left: 4rem;
   position: relative;
 }
-
 .intro__text {
   font-size: 3.8rem;
   padding-right: 2rem;
   margin-bottom: 3rem;
   font-family: "Nunito", sans-serif;
 }
-
 .intro__video {
   width: 13rem;
   height: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #000;
 }
-
 .intro__video__text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 70%;
-          flex: 0 0 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 0 0 70%;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: whitesmoke;
   font-size: 1rem;
   color: #46454c;
@@ -65,32 +39,21 @@
   font-weight: bold;
   font-family: "Quicksand", sans-serif;
 }
-
 .intro__video__icon-con {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
+  flex: 0 0 30%;
   background-color: #7f7bfa;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-size: 2.2rem;
   color: white;
 }
-
 .intro__video__icon {
   height: 3rem;
   width: 3rem;
   fill: white;
 }
-
 .intro__picture {
   height: 10rem;
   width: 10rem;
@@ -100,25 +63,20 @@
   bottom: 0;
   right: 0;
 }
-
 .intro .toggle--welcome {
   position: absolute;
   bottom: 3rem;
 }
-
 .intro .toggle--active {
   background-color: #ff877f;
 }
 
 .picture-con {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
+  flex: 0 0 60%;
   background-color: honeydew;
   color: white;
   position: relative;
 }
-
 .picture-con__picture {
   background-size: cover;
   background-position: center;
@@ -126,7 +84,6 @@
   height: 100%;
   background-image: url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
-
 .picture-con__quote {
   height: 10rem;
   width: 10rem;
@@ -134,12 +91,8 @@
   bottom: 0;
   left: 0;
   background-color: #7f7bfa;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   font-size: 1rem;
   text-transform: uppercase;
@@ -149,11 +102,8 @@
 }
 
 .toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .toggle > * {
   display: block;
   margin-right: 1rem;
@@ -165,24 +115,13 @@
 
 @media screen and (max-width: 700px) {
   .intro {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
     background-color: #444358;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 15rem 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: white;
     padding-left: 4rem;
     position: relative;
@@ -192,13 +131,14 @@
     text-align: center;
     padding-right: 0rem;
   }
+
   .picture-con {
     display: none;
   }
+
   .toggle--welcome {
     position: absolute;
     bottom: 3rem;
     left: 6rem;
   }
-}
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

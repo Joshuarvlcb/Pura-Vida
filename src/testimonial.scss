@@ -1,7 +1,9 @@
 .testimonial {
-  padding: 10rem 0;
+  // padding: 10rem 0;
+  min-height: 70vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   background-image: linear-gradient(
       to right,
@@ -17,9 +19,8 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 30rem;
-  padding: 3rem;
-  margin-left: 13rem;
+  width: 40rem;
+  padding: 4rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0.2rem 2rem 3rem rgba(0, 0, 0, 0.363);
@@ -73,9 +74,13 @@
     width: 0.4rem;
     height: 2.4rem;
   }
+
   position: absolute;
   right: 2rem;
   top: 40%;
+  .toggle--active {
+    background-color: pink;
+  }
 }
 
 @media screen and (max-width: 700px) {

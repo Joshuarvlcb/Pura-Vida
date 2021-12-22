@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdPlayArrow } from "react-icons/md";
 import "../css/landing.css";
-function landing() {
+import { useElementContext } from "../context";
+
+function Landing() {
+  const { contact } = useElementContext();
   return (
     <div>
       <div className="welcome">
         <div className="intro">
           <h3 className="intro__text">All the painting jobs you need</h3>
 
-          <div className="intro__video">
-            <p className="intro__video__text">intro video</p>
+          <div
+            className="intro__video"
+            onClick={() => {
+              window.scrollTo(0, contact.offsetTop - 15);
+            }}
+          >
+            <p className="intro__video__text">free consult!</p>
 
             <div className="intro__video__icon-con">
               <MdPlayArrow />
@@ -25,12 +33,6 @@ function landing() {
               ) : null}
             </>
           </div>
-
-          <div className="toggle toggle--welcome">
-            <span className="toggle__item toggle--active"></span>
-            <span className="toggle__item"></span>
-            <span className="toggle__item"></span>
-          </div>
         </div>
         <div className="picture-con">
           <div className="picture-con__picture" alt=""></div>
@@ -43,4 +45,4 @@ function landing() {
   );
 }
 
-export default landing;
+export default Landing;

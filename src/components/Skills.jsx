@@ -15,10 +15,14 @@ const Skills = () => {
         <div className="skills__content">
           <h3 className="skills__content__title">Welcome to Pura Vida</h3>
           <div className="p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum
-            officia odit laboriosam, earum ipsum dignissimos, delectus
-            perspiciatis eaque quia temporibus quaerat! Magnam facilis sint
-            modi, error assumenda aperiam hic.
+            As a leading Arizona industrial painting contractor, Pura Vida has
+            helped thousands of companies protect their assets and maximize
+            their facility investment. On every project we have undertaken
+            during our 45 years in business, we have made it our goal to exceed
+            customers’ expectations and provide a disruption-free experience
+            from start to finish. Leave the painting to us and we will guarantee
+            a stress-free and professional experience so you can concentrate on
+            core business needs and serving customers.
           </div>
           <div className="skills__description">
             <div className="skills__description__row">
